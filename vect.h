@@ -2,8 +2,8 @@
 // Created by thiabaud on 17/05/20.
 //
 
-#ifndef SDL_EXAMPLE_VECT_H
-#define SDL_EXAMPLE_VECT_H
+#ifndef EXAMPLE_VECT_H
+#define EXAMPLE_VECT_H
 
 #include <stdlib.h>
 
@@ -31,4 +31,7 @@ void v_push(T)(Vect(T) *v, T t);\
 T v_pop(T)(Vect(T) *v);\
 T v_get(T)(Vect(T) *v, size_t idx);
 
-#endif //SDL_EXAMPLE_VECT_H
+// uncomment to declare vector of int.
+// VECT_DECL(int)
+
+#endif //EXAMPLE_VECT_H
