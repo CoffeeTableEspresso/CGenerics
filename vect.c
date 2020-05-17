@@ -38,4 +38,5 @@ T v_get(T)(Vect(T) *v, size_t idx) {\
 	return v->items[idx];\
 }
 
-VECT_INSTANTIATE(int)
+// uncomment to instantiate with int.
+// VECT_INSTANTIATE(int)
