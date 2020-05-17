@@ -3,7 +3,6 @@
 //
 
 #include "vect.h"
-#include <SDL2/SDL.h>
 
 #define VECT_INIT_CAP 8
 
@@ -39,4 +38,4 @@ T v_get(T)(Vect(T) *v, size_t idx) {\
 	return v->items[idx];\
 }
 
-VECT_INSTANTIATE(SDL_Rect)
+VECT_INSTANTIATE(int)
