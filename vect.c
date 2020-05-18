@@ -12,10 +12,10 @@ struct VECT_NAME(T) {\
 	T *items;\
 };\
 \
-void v_init(T)(Vect(T) *v) {\
-	v->count = 0;\
-	v->cap = VECT_INIT_CAP;\
-	v->items = malloc(VECT_INIT_CAP * sizeof(T));\
+Vect(T) v_init(T)(void) {\
+	return {\
+		0, VECT_INIT_CAP, malloc(VECT_INIT_CAP * sizeof(T))\
+	};\
 };\
 \
 void v_cleanup(T)(Vect(T) *v) {\
