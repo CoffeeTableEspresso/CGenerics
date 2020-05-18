@@ -27,7 +27,7 @@ void v_push(T)(Vect(T) *v, T t) {\
 		v->cap *= 2;\
 		v->items = realloc(v->items, v->cap * sizeof(T));\
 	}\
-	v->items[v->count] = t;\
+	v->items[v->count++] = t;\
 }\
 \
 T v_pop(T)(Vect(T) *v) {\
