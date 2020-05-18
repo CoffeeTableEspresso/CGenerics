@@ -12,11 +12,8 @@ Whenever you need a vector of type `T`, add `VECT_INSTANTIATE(T)` to `vect.c` an
 Then, after including `vect.h`, you can do the following (assuming `T` is whatever type you want, for example `int`):
 
 ```
-// Declare v
-Vect(T) v;
-
-// initialize v
-v_init(T)(&v);
+// Declare and init v
+Vect(T) v = v_init(T)();
 
 // add an element to v.
 v_push(T)(&v, t);
