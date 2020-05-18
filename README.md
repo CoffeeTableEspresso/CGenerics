@@ -1,6 +1,8 @@
 # C Generics
 A sample of using macros to emmulate generics in C.
 
+(This is obviously not actual generics, and was mostly made to make fun of some friends who use a _certain language_ that _still_ doesn't have generics.)
+
 This is just a POC, to show it's possible or get your started on writing your own.
 
 How it works:
