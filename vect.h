@@ -25,7 +25,7 @@ struct VECT_NAME(T) {\
 	T *items;\
 };\
 \
-void v_init(T)(Vect(T) *v);\
+Vect(T) v_init(T)(void);\
 void v_cleanup(T)(Vect(T) *v);\
 void v_push(T)(Vect(T) *v, T t);\
 T v_pop(T)(Vect(T) *v);\
